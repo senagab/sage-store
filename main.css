@@ -1,21 +1,21 @@
 
 @font-face {
     font-family: 'EffraRegular';
-    src: url('fonts/EFFRA_STD_RG.TTF') format('truetype');
+    src: url('./fonts/EFFRA_STD_RG.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'EffraLight';
-    src: url('fonts/EFFRA_STD_LT.TTF') format('truetype');
+    src: url('./fonts/EFFRA_STD_LT.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Effra';
-    src: url('fonts/EFFRA_STD.TTF') format('truetype');
+    src: url('./fonts/EFFRA_STD.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
