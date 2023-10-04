@@ -1,0 +1,92 @@
+
+@font-face {
+    font-family: 'EffraRegular';
+    src: url('fonts/EFFRA_STD_RG.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EffraLight';
+    src: url('fonts/EFFRA_STD_LT.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Effra';
+    src: url('fonts/EFFRA_STD.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: EffraLight, 'serif';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DBD4BF;
+}
+
+.background-image {
+    background-image: url("./images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1024px;
+    width: 100%;
+}
+
+.container   {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 24px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-bottom: 4px solid transparent;
+}
+
+.clear {
+    clear: both;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.sobre-img img {
+    height: 500px;
+}
+
+.sobre-texto {
+    float: left;
+    padding: 100px 0;
+    color: #4E4138;
+}
+
+.itens {
+    display: grid;
+    grid-template-columns: repeat(4, 24,25%);
+    column-gap: 1%;
+}
