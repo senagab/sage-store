@@ -20,6 +20,21 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'March';
+    src: url('./fonts/MARCHEVOKED-DEMO.OTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.effra-regular {
+    font-family: 'EffraRegular', sans-serif;
+}
+
+.march-regular {
+    font-family: 'March', sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -47,8 +62,9 @@ body {
 }
 
 header {
-    padding: 24px 0;
+    padding: 24px 60px;
     display: flex;
+    justify-content: space-between;
 }
 
 header .container {
@@ -115,8 +131,9 @@ header .container {
 .itens {
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(4, 24.25%);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 1%;
+    margin-bottom: 100px;
 }
 
 .item img {
@@ -151,4 +168,51 @@ header .container {
 
 .carrinho p {
     color: #4E4138;
+}
+
+.galeria {
+    margin-top: 100px;
+}
+
+.galeria-texto {
+    margin-bottom: 30px;
+}
+
+.galeria-itens {
+    display: grid;
+    grid-template-columns: repeat(5, 19.2%);
+    column-gap: 1%;
+    row-gap: 1%;
+}
+
+h2 {
+    font-family: 'March', sans-serif;  
+    font-size: 32px;  
+    color: #4E4138;
+}
+
+.galeria img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria-arroba {
+    margin-top: 5px;
+    float: right;
+    font-size: 24Cpx;;
+}
+
+.galeria-arroba a {
+    text-decoration: none;
+    color: #4E4138;
+}
+
+.galeria img{
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    transform-origin: center center;
 }
