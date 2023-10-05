@@ -157,6 +157,12 @@ header .container {
     text-decoration: none;
 }
 
+.desconto {
+    margin-right: 5px;
+    color: #888;
+    text-decoration: line-through;
+}
+
 .topo-item {
     display: flex;
     padding: 8px 0;
@@ -185,6 +191,8 @@ header .container {
 .carrinho p {
     color: #4E4138;
 }
+
+/* galeria */
 
 .galeria {
     margin-top: 100px;
