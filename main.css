@@ -249,8 +249,9 @@ h2 {
 }
 
 form {
-    margin: 0 auto;
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
 }
 
 .campo-email {
