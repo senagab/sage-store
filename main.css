@@ -59,6 +59,9 @@ body {
     font-family: 'March', sans-serif;
     font-size: 150px;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 300px;
 }
 
 .container   {
