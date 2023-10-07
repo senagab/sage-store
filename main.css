@@ -320,3 +320,95 @@ footer p {
 .footer-icones img {
     height: 20px;
 }
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 90%;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    .btn-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .btn-menu button {
+        padding: 8px;
+        height: 40px;
+        width: 100px;
+        font-size: 10px;
+        border-radius: 20px;
+    }
+    
+    .sobre {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 100px;
+    }
+
+    .sobre-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .itens {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2%;
+        row-gap: 5%;
+        margin-bottom: 100px;
+    }
+
+    .galeria-itens {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1%;
+        row-gap: 1%;
+    }
+
+    form {
+        display: grid;
+    }
+    
+    .contato .campo-email, button {
+        grid-template-columns: 100%;
+        /* display: block; */
+        margin-bottom: 15px;
+        /* row-gap: 20px; */
+        width: 400px;
+        /* justify-content: center; */
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .btn-menu {
+        display: none;
+    }
+}
