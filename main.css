@@ -392,6 +392,10 @@ footer p {
         height: 200px;
     }
 
+    .topo-item {
+        font-size: 14px;
+    }
+
     .carrinho {
         font-size: 12px;
     }
