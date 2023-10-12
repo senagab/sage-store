@@ -51,7 +51,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
-    max-width: 2560px;
+    /* max-width: 2560px; */
     width: 100%;
 }
 
@@ -157,6 +157,8 @@ header .container {
 .item img {
     max-width: 100%;
     height: 300px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .item a {
@@ -330,6 +332,7 @@ footer p {
     .logo {
         display: flex;
         justify-content: center;
+        margin: 0 auto;
     }
     
     .menu {
@@ -349,6 +352,7 @@ footer p {
         width: 100px;
         font-size: 10px;
         border-radius: 20px;
+        /* display: none; */
     }
     
     .sobre {
@@ -362,6 +366,19 @@ footer p {
         justify-content: center;
     }
 
+    .sobre-texto {
+        text-align: center;
+    }
+
+    .sobre-texto p {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .sobre-icones {
+        justify-content: center;
+    }
+
     .itens {
         margin-top: 100px;
         display: grid;
@@ -371,6 +388,10 @@ footer p {
         margin-bottom: 100px;
     }
 
+    .galeria-texto {
+        text-align: center;     
+    }
+    
     .galeria-itens {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
