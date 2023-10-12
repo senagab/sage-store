@@ -404,6 +404,10 @@ footer p {
         text-align: center;     
     }
 
+    .galeria img {
+        height: 150px;
+    }
+
     .galeria-itens {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -424,13 +428,12 @@ footer p {
         /* display: block; */
         margin-bottom: 15px;
         /* row-gap: 20px; */
-        width: 300px;
+        width: 200px;
         /* justify-content: center; */
     }
 
 
 }
-
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
