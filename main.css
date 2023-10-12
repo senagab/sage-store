@@ -258,6 +258,7 @@ h2 {
 .contato {
     margin-top: 100px;
     background-color: #4E4138;
+    background-size: 100%;
     padding: 60px
 }
 
@@ -335,6 +336,13 @@ footer p {
         justify-content: center;
         margin: 0 auto;
     }
+
+    .titulo {
+        font-size: 100px;
+        padding: 100px;
+        align-items: center;
+        justify-content: center;
+    }
     
     .menu {
         display: none;
@@ -359,12 +367,16 @@ footer p {
     .sobre {
         display: grid;
         grid-template-columns: 100%;
-        margin-top: 100px;
+        margin-top: 30px;
     }
 
     .sobre-img {
         display: flex;
         justify-content: center;
+    }
+
+    .sobre-img img {
+        height: 400px;
     }
 
     .sobre-texto {
@@ -384,14 +396,15 @@ footer p {
     .itens {
         margin-top: 100px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         column-gap: 2%;
         row-gap: 5%;
         margin-bottom: 100px;
+        width: 60%;
     }
 
     .item img {
-        height: 200px;
+        height: 300px;
     }
 
     .topo-item {
@@ -420,6 +433,10 @@ footer p {
     .galeria-arroba {
         margin-top: 30px;
         text-decoration: underline;
+    }
+
+    .contato {
+
     }
 
     form {
