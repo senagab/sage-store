@@ -387,11 +387,15 @@ footer p {
         row-gap: 5%;
         margin-bottom: 100px;
     }
+    
+    .item img {
+        height: 150px;
+    }
 
     .galeria-texto {
         text-align: center;     
     }
-    
+
     .galeria-itens {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
