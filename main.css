@@ -387,9 +387,13 @@ footer p {
         row-gap: 5%;
         margin-bottom: 100px;
     }
-    
+
     .item img {
-        height: 150px;
+        height: 200px;
+    }
+
+    .carrinho {
+        font-size: 12px;
     }
 
     .galeria-texto {
