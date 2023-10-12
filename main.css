@@ -431,6 +431,14 @@ footer p {
         width: 300px;
         /* justify-content: center; */
     }
+    
+    footer p {
+        font-size: 12px;
+    }
+
+    .footer-icones img {
+        height: 14px;
+    }
 
 
 }
