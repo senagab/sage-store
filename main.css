@@ -692,6 +692,7 @@ footer p {
     }
 }
 
+
 /* Adicionando estilo para a modal */
 .modal {
     display: none;
@@ -730,7 +731,7 @@ footer p {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
 }
