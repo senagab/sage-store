@@ -389,6 +389,10 @@ footer p {
         margin: 0 auto;
     }
 
+    section h2 {
+        font-size: 25px;
+    }
+
     .titulo {
         font-size: 100px;
         padding: 100px;
@@ -493,10 +497,6 @@ footer p {
         max-width: 100%;
     }
 
-    .itens-titulo {
-        font-size: 25px;
-    }
-
     .itens-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -589,6 +589,10 @@ footer p {
 
     .btn-menu {
         display: none;
+    }
+
+    section h2 {
+        font-size: 25px;
     }
     
     .sobre {
