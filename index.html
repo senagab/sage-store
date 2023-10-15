@@ -70,22 +70,22 @@
                         projeto absorb
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iure molestiae quisquam suscipit ex eius autem numquam saepe vero? Veniam iste nesciunt dicta. Quos cum ullam eaque sit sequi neque.
+                        Fundamos nossa empresa há 20 anos, iniciando o projeto Absorb para revolucionar a cerâmica. Focados no classicismo moderno, nossos talentosos profissionais europeus criam peças de alto padrão e linhas inéditas. Mantemos a "fundação de mármore" com dedicação e esforço, buscando sempre inovação e conhecimento. Juntos, moldamos o presente e esculpimos o futuro da cerâmica.
                     </p>
                     <div class="sobre-icones">
                         <ul>
                             <li>
-                                <a href="">
+                                <a href="https://br.pinterest.com/">
                                     <img src="./images/icons/icon-pint.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="https://vsco.co/leon-help/gallery">
                                     <img src="./images/icons/icon-vsco.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="https://web.telegram.org/">
                                     <img src="./images/icons/icon-teleg.png" alt="">
                                 </a>
                             </li>
@@ -110,7 +110,9 @@
                         </div>
                         <img src="./images/item-1.png" alt="vaso de ceramica">
                         <div class="carrinho">
-                            <span>comprar</span>
+                            <span>
+                                <a href="" class="openModalLink">comprar</a>
+                            </span>
                         </div>
                     </a>
                 </div>
@@ -123,7 +125,9 @@
                         </div>
                         <img src="./images/item-2.png" alt="vaso de ceramica">
                         <div class="carrinho">
-                            <span>comprar</span>
+                            <span>
+                                <a href="" class="openModalLink">comprar</a>
+                            </span>
                         </div>
                     </a>
                 </div>
@@ -136,7 +140,9 @@
                         </div>
                         <img src="./images/item-3.png" alt="vaso de ceramica">
                         <div class="carrinho">
-                            <span>comprar</span>
+                            <span>
+                                <a href="" class="openModalLink">comprar</a>
+                            </span>
                         </div>
                     </a>
                 </div>
@@ -147,8 +153,10 @@
                             <span class="preco effra-regular"><span class="desconto">749,90</span>699,99</span>  
                         </div>
                         <img src="./images/item-4.png" alt="vaso de ceramica">
-                        <div class="carrinho">
-                            <span>comprar</span>
+                        <div id="openModalDiv" class="carrinho">
+                            <span>
+                                <a href="" class="openModalLink">comprar</a>
+                            </span>
                         </div>
                     </a>
                 </div>
@@ -225,23 +233,31 @@
         <div class="footer-icones">
             <ul>
                 <li>
-                    <a href="">
+                    <a href="https://br.pinterest.com/">
                         <img src="./images/icons/icon-pint.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="https://vsco.co/leon-help/gallery">
                         <img src="./images/icons/icon-vsco.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="https://web.telegram.org/">
                         <img src="./images/icons/icon-teleg.png" alt="">
                     </a>
                 </li>
             </ul>
         </div>
     </footer>
+
+    <!-- modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>produto adicionado ao carrinho! <a href="#">ver</a></p>
+        </div>
+    </div>
     
     <script src="./js/main.js"></script>
 
@@ -251,7 +267,24 @@
             $('.btn-menu button').click(function (){
                 $('.menu').slideToggle();
             })
-        })
+
+            // Abrir o modal quando qualquer botão "comprar" for clicado
+            $('.openModalLink').click(function(event) {
+                event.preventDefault(); // Evita que o link redirecione para outra página
+                $('#myModal').css('display', 'block').hide().fadeIn();
+
+                // Esconder o modal após 3 segundos com efeito de fade-out
+                setTimeout(function() {
+                $('#myModal').fadeOut();
+                }, 3000); // Alterado para 3000 milissegundos (3 segundos)
+            });
+
+            // Fechar o modal quando clicar no botão de fechar (x)
+            $('.close').click(function() {
+                $('#myModal').fadeOut();
+            });
+        });
+
     </script>
 </body>
 </html>

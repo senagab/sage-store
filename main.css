@@ -164,6 +164,7 @@ header .container {
 /* produtos */
 
 .itens {
+    margin-top: 100px;
     max-width: 100%
 }
 
@@ -689,4 +690,47 @@ footer p {
     .btn-menu {
         display: none;
     }
+}
+
+/* Adicionando estilo para a modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    animation: fadeIn 1s;
+}
+
+.modal-content {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    padding: 20px 60px;
+    /* height: 30px; */
+    border: 1px solid #888;
+    white-space: nowrap; /* Evita quebra de linha */
+    color: #fff;
+}
+
+.modal-content a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
