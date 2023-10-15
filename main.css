@@ -167,19 +167,20 @@ header .container {
     max-width: 100%
 }
 
+itens-grid {
+    margin-top: 30px;
+}
+
 .itens-titulo {
     display: flex;
     justify-content: center;
 }
 
 .itens-grid {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 1%;
-}
-
-.itens-texto {
-    padding: 60px;
 }
 
 .item img {
@@ -263,11 +264,11 @@ header .container {
 }
 
 .galeria-texto {
-    margin-bottom: 30px;
     text-align: center;
 }
 
 .galeria-itens {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(5, 19.2%);
     column-gap: 1%;
