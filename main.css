@@ -228,7 +228,7 @@ itens-grid {
     justify-content: flex-end;
 }
 
-.carrinho p {
+.carrinho a {
     color: #4E4138;
 }
 
