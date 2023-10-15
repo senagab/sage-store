@@ -47,9 +47,9 @@ body {
 }
 
 .background-image {
-    background-image: url("./images/bg-desktop.png");
+    background-image: url("./images/bg-desktop.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover;
     height: 900px;
     /* max-width: 2560px; */
     width: 100%;
@@ -73,7 +73,7 @@ body {
 header {
     padding: 24px 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 header .container {
@@ -85,8 +85,14 @@ header .container {
     height: 45px
 }
 
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
 .menu > li {
-    float: left;
+    display: flex;
+    justify-content: center;
     list-style: none;
     padding: 16px;
     border-bottom: 4px solid transparent;
@@ -104,6 +110,10 @@ header .container {
 
 .clear {
     clear: both;
+}
+
+.menu-oculto {
+    display: none;
 }
 
 .sobre {
@@ -151,7 +161,7 @@ header .container {
     height: 20px;
 }
 
-/* PRODUTOS ITENS */
+/* produtos */
 
 .itens {
     max-width: 100%
@@ -254,6 +264,7 @@ header .container {
 
 .galeria-texto {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .galeria-itens {
@@ -363,7 +374,7 @@ footer p {
 }
 
 .footer-icones img {
-    height: 20px;
+    height: 15px;
 }
 
 @media screen and (max-width: 767px) { /* celular */ 
@@ -387,6 +398,13 @@ footer p {
     
     .menu {
         display: none;
+        text-align: center;
+    }
+
+    .menu > li {
+        list-style: none;
+        padding: 16px;
+        border: none;
     }
 
     .btn-menu {
@@ -398,13 +416,43 @@ footer p {
 
     .btn-menu button {
         padding: 8px;
-        height: 40px;
+        height: 30px;
         width: 100px;
         font-size: 10px;
-        border-radius: 20px;
+        background-color: #fff;
         /* display: none; */
     }
     
+    .btn-menu:hover .menu {
+        display: block;
+        width: 100%;
+        position: relative;
+        border: none;
+    }
+
+    .menu li {
+        display: block;
+        padding: 8px;
+        width: 60px;
+    }
+
+    .menu, .menu > li  {
+        width: 100%;
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .menu > li { /* filho direto */
+        clear: both;
+    }
+    
+    .menu li:hover { /* filho direto */
+        border: none;
+    }
+
     .sobre {
         display: grid;
         grid-template-columns: 100%;
