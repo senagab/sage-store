@@ -531,12 +531,12 @@ footer p {
 
     .carrinho {
         font-size: 12px;
+        text-align: center;
     }
 
     .btn-itens a{
         text-decoration: none;
         color: #4E4138;
-        margin-top: 100px;
     }
 
     .btn-container {
@@ -546,6 +546,10 @@ footer p {
     
     .btn-itens {
         margin-top: 100px;
+    }
+
+    .btn-itens a {
+        text-align: center;
     }
 
     .galeria-texto {
@@ -563,6 +567,7 @@ footer p {
         margin-top: 30px;
         text-decoration: underline;
     }
+
     .hide-on-mobile {
         display: none;
     }
