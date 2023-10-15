@@ -540,10 +540,13 @@ footer p {
     }
 
     .btn-container {
-        margin-top: 100px;
         display: flex;
         justify-content: center;
-    }   
+    }
+    
+    .btn-itens {
+        margin-top: 100px;
+    }
 
     .galeria-texto {
         text-align: center;     
