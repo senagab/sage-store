@@ -71,7 +71,7 @@ body {
 }
 
 header {
-    padding: 24px 60px;
+    padding: 15px 60px;
     display: flex;
     justify-content: center;
 }
@@ -415,12 +415,11 @@ footer p {
     }
 
     .btn-menu button {
-        padding: 8px;
+        background-color: transparent;
+    }
+
+    .btn-menu img {
         height: 30px;
-        width: 100px;
-        font-size: 10px;
-        background-color: #fff;
-        /* display: none; */
     }
     
     .btn-menu:hover .menu {
