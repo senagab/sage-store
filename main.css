@@ -50,7 +50,7 @@ body {
     background-image: url("./images/bg-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
+    height: 850px;
     /* max-width: 2560px; */
     width: 100%;
 }
@@ -493,6 +493,10 @@ footer p {
         max-width: 100%;
     }
 
+    .itens-titulo {
+        font-size: 25px;
+    }
+
     .itens-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -524,6 +528,12 @@ footer p {
         font-size: 12px;
     }
 
+    .btn-itens {
+        text-decoration: none;
+        color: #4E4138;
+    }
+
+
     .galeria-texto {
         text-align: center;     
     }
@@ -539,7 +549,6 @@ footer p {
         margin-top: 30px;
         text-decoration: underline;
     }
-
     .hide-on-mobile {
         display: none;
     }
@@ -609,6 +618,10 @@ footer p {
         max-width: 100%;
     }
 
+    .itens-titulo {
+        font-size: 25px;
+    }
+
     .itens-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -627,6 +640,11 @@ footer p {
 
     .carrinho {
         font-size: 12px;
+    }
+
+    .btn-itens {
+        text-decoration: none;
+        color: #4E4138;
     }
 
     .galeria-texto {
