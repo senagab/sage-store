@@ -503,9 +503,10 @@ footer p {
 
     .itens-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         column-gap: 2%;
         row-gap: 3%;
+        margin-bottom: 100px;
     }
 
     .itens-texto {
@@ -520,7 +521,7 @@ footer p {
     }
 
     .item img {
-        height: 200px;
+        height: 400px;
         /* object-fit: fill; */
     }
 
@@ -535,8 +536,14 @@ footer p {
     .btn-itens a{
         text-decoration: none;
         color: #4E4138;
+        margin-top: 100px;
     }
 
+    .btn-container {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+    }   
 
     .galeria-texto {
         text-align: center;     
@@ -691,7 +698,6 @@ footer p {
         display: none;
     }
 }
-
 
 /* Adicionando estilo para a modal */
 .modal {
