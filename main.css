@@ -531,7 +531,7 @@ footer p {
         font-size: 12px;
     }
 
-    .btn-itens {
+    .btn-itens a{
         text-decoration: none;
         color: #4E4138;
     }
