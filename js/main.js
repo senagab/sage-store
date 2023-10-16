@@ -8,6 +8,10 @@ $(document).ready(function () {
         $('.mais-itens').slideToggle();
     })
 
+    $('.btn-container button').text(function(i, text) {
+    return text === 'ver mais' ? 'ver menos' : 'ver mais';
+    });
+
     // Abrir o modal quando qualquer botão "comprar" for clicado
     $('.openModalLink').click(function(event) {
         event.preventDefault(); // Evita que o link redirecione para outra página
