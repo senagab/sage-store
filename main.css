@@ -227,6 +227,10 @@ itens-grid {
     justify-content: flex-end;
 }
 
+.carrinho li {
+    list-style-type: none;
+}
+
 .carrinho a {
     color: #4E4138;
 }
@@ -257,16 +261,8 @@ itens-grid {
     text-decoration: underline;
 }
 
-.efeito {
-    text-align:center;border-bottom:1px solid #444
-}
-
-span .efeito>a {
-    padding:20px 0!important
-}
-
-.efeito {
-    margin-top:20px;margin-bottom:15px;font-size:14px
+li .efeito > a {
+    padding:20px 0!important;
 }
 
 .efeito a::before,.efeito a::after {
@@ -281,7 +277,7 @@ span .efeito>a {
     opacity:1;transform:translateX(0)
 }
 
-span.efeito>a {
+li .efeito > a {
     padding:10px 0;text-shadow:none;outline:0
 }
 
