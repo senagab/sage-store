@@ -4,6 +4,10 @@ $(document).ready(function () {
         $('.menu').slideToggle();
     })
 
+    $('.btn-container button').click(function (){
+        $('.mais-itens').slideToggle();
+    })
+
     // Abrir o modal quando qualquer botão "comprar" for clicado
     $('.openModalLink').click(function(event) {
         event.preventDefault(); // Evita que o link redirecione para outra página
