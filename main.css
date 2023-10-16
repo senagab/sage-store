@@ -257,6 +257,34 @@ itens-grid {
     text-decoration: underline;
 }
 
+.efeito {
+    text-align:center;border-bottom:1px solid #444
+}
+
+span .efeito>a {
+    padding:20px 0!important
+}
+
+.efeito {
+    margin-top:20px;margin-bottom:15px;font-size:14px
+}
+
+.efeito a::before,.efeito a::after {
+    display:inline-block;opacity:0;-webkit-transition:-webkit-transform .3s,opacity .2s;-moz-transition:-moz-transform .3s,opacity .2s;transition:transform .3s,opacity .2s
+}
+
+.efeito a::before {
+    margin-right:5px;content:'>';transform:translateX(20px)
+}
+
+.efeito a:hover::before,.efeito a:hover::after,.efeito a:focus::before,.efeito a:focus::after{
+    opacity:1;transform:translateX(0)
+}
+
+span.efeito>a {
+    padding:10px 0;text-shadow:none;outline:0
+}
+
 /* galeria */
 
 .galeria {
