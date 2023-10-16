@@ -98,26 +98,9 @@ header .container {
     border-bottom: 4px solid transparent;
 }
 
-
-
-.menu > li::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 25%; /* Largura da borda: 50% da largura do elemento */
-    width: 50%; /* Largura da borda: 50% da largura do elemento */
-    height: 2px; /* Altura da borda */
-    background-color: #fff; /* Cor da borda */
-    transition: width 0.3s; /* Adicionando uma transição para o efeito de largura */
-}
-
-.menu > li:hover::after {
-    width: 25%;
-}
-
-/* .menu > li:hover {
+.menu > li:hover {
     border-bottom: 3px solid white;
-} */
+}
 
 .menu li a {
     text-decoration: none;
