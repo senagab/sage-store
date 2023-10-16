@@ -71,7 +71,7 @@ body {
 }
 
 header {
-    padding: 15px 60px;
+    padding: 25px 60px;
     display: flex;
     justify-content: center;
 }
@@ -418,7 +418,6 @@ footer p {
         display: flex;
         justify-content: center;
         margin-top: 16px;
-        padding-bottom: 16px;
     }
 
     .btn-menu button {
