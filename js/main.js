@@ -6,11 +6,16 @@ $(document).ready(function () {
 
     $('.btn-container button').click(function (){
         $('.mais-itens').slideToggle();
+        toggleText();
     })
 
-    $('.btn-container button').text(function(i, text) {
-    return text === 'ver mais' ? 'ver menos' : 'ver mais';
-    });
+    function toggleText() {
+        $('.btn-itens').text(function(i, text) {
+            return text === 'ver menos' ? 'ver mais' : 'ver menos';
+        });
+    }
+
+
 
     // Abrir o modal quando qualquer botão "comprar" for clicado
     $('.openModalLink').click(function(event) {
