@@ -98,9 +98,9 @@ header .container {
     border-bottom: 4px solid transparent;
 }
 
-.menu > li:hover {
+/* .menu > li:hover {
     border-bottom: 3px solid white;
-}
+} */
 
 .menu li a {
     text-decoration: none;
