@@ -647,8 +647,8 @@ footer p {
 
     .itens-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 1%;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2%;
         row-gap: 1%;
     }
 
