@@ -572,7 +572,7 @@ footer p {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         column-gap: 2%;
-        row-gap: 3%;
+        row-gap: 1%;
         margin-bottom: 100px;
     }
 
