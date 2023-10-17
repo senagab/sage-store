@@ -246,8 +246,9 @@ itens-grid {
     text-decoration: underline;
 }
 
-.info {
-    padding: 1px;
+.info img, .like img {
+    height: 12px;
+    opacity: 1;
 }
 
 .placeholder-text {
@@ -255,13 +256,27 @@ itens-grid {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 24px; /* Adjust the font size as needed */
-    color: #000; /* Adjust the text color as needed */
+    text-transform: lowercase;
+    font-size: 10px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    opacity: 0; /* Initially hide the placeholder */
+    transition: opacity 0.3s ease-in-out; /* Add a transition for smooth effect */
+    font-family: 'EffraLight', sans-serif;
+    white-space: nowrap;
 }
 
-.info img {
-    height: 12px;
-    opacity: 0.8;
+.placeholder-text p {
+    text-transform: uppercase !important;
+}
+
+.item {
+    position: relative; /* Add this to make the placeholder relative to the image */
+}
+
+.info img:hover + .placeholder-text {
+    opacity: 1; /* Show the placeholder when the info image is hovered */
 }
 
 .btn-container {
