@@ -249,6 +249,7 @@ itens-grid {
 .info img, .like img {
     height: 12px;
     opacity: 1;
+    cursor: pointer;
 }
 
 .placeholder-text {
