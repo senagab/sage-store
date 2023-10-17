@@ -668,10 +668,7 @@ footer p {
     .footer-icones img {
         height: 14px;
     }
-
-
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     
@@ -779,7 +776,6 @@ footer p {
     .contato .campo-email, button {
         width: 50%;
     }
-
 }
 
 @media screen and (min-width: 1024px) {
