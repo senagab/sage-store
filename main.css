@@ -231,7 +231,7 @@ itens-grid {
     font-weight: bold;
     font-size: 14px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .carrinho li {
@@ -244,6 +244,24 @@ itens-grid {
 
 .carrinho span:hover {
     text-decoration: underline;
+}
+
+.info {
+    padding: 1px;
+}
+
+.placeholder-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #000; /* Adjust the text color as needed */
+}
+
+.info img {
+    height: 12px;
+    opacity: 0.8;
 }
 
 .btn-container {
