@@ -9,6 +9,13 @@ $(document).ready(function () {
         toggleText();
     })
 
+    $('.img-hover').hover(function() {
+        $(this).css('transform', 'scale(1.2)');
+    }, function() {
+        $(this).css('transform', 'scale(1)');
+    });
+    
+
     function toggleText() {
         $('.btn-itens').text(function(i, text) {
             return text === 'ver menos' ? 'ver mais' : 'ver menos';

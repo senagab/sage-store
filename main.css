@@ -196,11 +196,7 @@ itens-grid {
 }
 
 .item-hover > img {
-    transition: transform .3s ease-in-out; 
-}
-
-.item-hover:hover > img {
-    transform: scale(1.2);
+    transition: all .3s ease-in-out;
 }
 
 .item img {
